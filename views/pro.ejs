@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pro</title>
+</head>
+<link rel="stylesheet" type="text/css" href="bootstrap.css">
+<body  style="background-color: silver">
+	<h1>USERS</h1>
+
+ <% for(var i=0;i<result.length;i++) { %>
+<div class="col-md-3" style="padding:10px; margin-left: 50px;min-height: 30px">
+	<div class="thumbnail">
+   Name:<%= result[i].Name %>
+   <br></br>
+   Email:<%= result[i].Email %>
+   <br></br>
+   UserName:<%= result[i].UserName %>
+   <br></br>
+   <a href="/profiles/<%= result[i].Email%>"><button  type="button" class="btn btn-danger">go to profiles</button></a>
+</div>
+</div>
+ <% } %> 
+ <center>
+<a class="btn btn-primary" href="\login">Logout</a>
+</center>
+</body>
+</html>
